@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="CSs/bai10.css" type="text/css">
+</head>
+<body>
+		<table border="1" class="big1">
+		<caption class="td1">Phiếu đăng ký tham gia chương trình khuyến mãi</caption>
+		<tr>
+			<td>Họ và tên</td>
+			<td><input type="text" name="hvt" value="" id="ten"></td>
+		</tr>
+		<tr>
+			<td>Địa chỉ</td>
+			<td><input type="text" name="dc" value="" id="diachi"></td>
+		</tr>
+		<tr>
+			<td>Điện thoại</td>
+			<td><input type="text" name="dt" value="" id="dienthoai"></td>
+		</tr>
+		<tr>
+			<td>Phái</td>
+			<td><input type="radio" name="phai" id="nam" checked="checked"/>
+			<label for="nam">Nam</label>
+			<input type="radio" name="phai" id="nu" />
+			<label for="nu">Nữ</label></td>
+		</tr>
+		<tr>
+		<td>Nghề nghiệp</td>
+		<td><select id="nghenghiep">
+			<option value="1" selected="selected">Giáo viên</option>
+			<option value="2">Bác sĩ</option>
+			<option value="3">Công an</option>
+			<option	value="4">Nhân viên văn phòng</option>
+		</select></td>
+		</tr>
+		<tr>
+			<td>Chọn sản phẩm tham gia</td>
+			<td><select id="sanpham" multiple="multiple">
+				<option value="1" selected="selected">Kem đánh răng</option>
+				<option value="2">Bột giặt</option>
+				<option value="3">Dầu gội đầu</option>
+				<option value="4">Sữa tắm</option>
+				</select></td>
+		</tr>
+		<tr>
+			<td>Số người dự đoán tham gia</td>
+			<td><input type="text"	name="songuoi" value="" id="NG"></td>
+		</tr>
+		<tr>
+			
+			<td style="text-align:center;" colspan="2"><input type="button" name="dy" value="Đồng ý"
+			onclick="dy.innerHTML='Bạn đã đăng ký thành công!!!'"/></td>
+		<tr>
+		<tr>
+			<td colspan="2" class="td2"><label id="dy" class="td3"></label></td>
+		</tr>
+</body>
+</html>
